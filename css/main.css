@@ -1,0 +1,400 @@
+/* THEME COLORS 
+
+Green accent: #00a82d;
+Graphite Header text: #383428;
+Slightly Lighter small text: TBD;
+HERO BLACK: #202020
+Grey Background Color: #F2F2F2
+
+*/
+
+/* GLOBAL STYLES */
+
+.html {
+    font-family: helvetica;
+    
+}
+
+.body  {
+    
+    
+}
+
+.content-container {
+    color: inherit;
+    display: flex;
+    padding: 10vh 4vw 10vh;
+}
+
+.home {
+    flex: 1 1 auto;
+}
+
+a {
+    font-family: 'Roboto';
+}
+
+h1, h2, h3, h4 {
+    color: #383838;
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.6em;
+    color: #00a82d;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    color: #888b8d;
+    font-family: helvetica;
+    line-height: 1.6;
+}
+
+span {
+    color: #888b8d;
+    font-family: helvetica;
+}
+
+/* HEADER STYLES */
+
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid #00a82d;
+    color: #43464B;
+    position: fixed;
+    width: 100%;
+    z-index:20;
+}
+
+.header-logo {
+    height: 10vh;
+}
+.header-list {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: 66%;
+}
+.header-list > li {
+    border: .5px solid #fff;
+    border-radius: 3px;
+    display: inline-block;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.header-list a {
+    box-sizing: border-box;
+    color: inherit;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.8vh 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.header-list li:hover {
+    background-color: #00a82d;
+}
+
+.header-list a:hover {
+    color: #fff;
+}
+
+.logo-list-item:hover {
+    background-color: #fff;
+}
+
+/* HERO STYLES */
+
+.big-hook {
+    
+}
+
+.down-arrow {
+    margin: auto;
+    width: 100%;
+}
+
+.full-hero {
+    box-sizing: border-box;
+    height: 90vh;
+    margin:auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+/* BLOCKING THIS CURRENTLY
+
+.full-hero:after {
+    border: 10px solid;
+    border-color: #00a82d transparent transparent;
+    bottom: 2vh;
+    color: #fff;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 0;
+}
+
+*/
+
+.hero-content {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    width: 60vw;
+}
+
+.hero-content h1 {
+    color: #202020;
+    display: block;
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.hero-content h2 {
+    background-color: #00a82d;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    font-size: 3em;
+    font-weight: 100;
+    line-height: 1.2;
+    padding: 0 2vw;
+    text-transform: uppercase;
+}
+
+.full-hero p {
+    bottom: 0vh;
+    font-size: 6em;
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+.little-hook {
+    
+}
+
+.big-hook,
+.little-hook {
+    padding: 7vh 0 5vh;
+}
+
+/* WHAT WE DO & WHO WE SERVE */
+
+.what-and-who-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.what-content {
+    float: left;
+    width: 50%;
+}
+
+.what-icon {
+    align-items: center;
+    color: #00a82d;
+    display: flex;
+    flex-grow: 1;
+    height: 45vh;
+    justify-content: center;
+}
+
+.what-icon i {
+    box-sizing: border-box;
+    font-size: 9em;
+    position: relative;
+}
+
+
+.what-we-do {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    padding: 7vh;
+}
+
+.who-copy span {
+    color: #000;
+    font-weight: 400;
+}
+
+.what-do-copy p,
+.who-copy p {
+    font-size: 1.6em;
+    margin: 2vh 0;
+}
+
+.who-what {
+    height: 45vh;
+}
+
+.who-content {
+    box-sizing: border-box;
+    float: right;
+    width: 50%;
+}
+
+/* PRICING STYLLING */
+
+.choices-wrapper .col {
+    border: 1px solid black;
+    max-width: 960px;
+}
+
+.choices-wrapper > .col {
+    border: 1px solid black;
+    max-width: 960px;
+    margin-left: 2em;
+}
+
+.col-three {
+    display: flex;
+    flex: 1;
+}
+.option-box {
+    box-sizing: border-box;
+    float: left;
+    margin: 6rem 0 0;
+    padding: 0 3%;
+    width: 33%;
+}
+
+.option-box div {
+    border: 1px solid #000;
+}
+.plan-name {
+    box-sizing: border-box;
+    font-size: 3em;
+}
+.plan-price {
+    font-size: 2em;
+}
+
+.pricing {
+    background-color: #F2F2F2;
+    height: 90vh;
+    margin: 4em auto;
+}
+.pricing-title {
+    align-items: center;
+    box-sizing: border-box;
+    color: #202020;
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 4em;
+    height: 6vh;
+    justify-content: center;
+    padding: 2vh 0 2vh;
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+.plan-size {
+    font-size: 1.5em;
+}
+
+/* HOW IT WORKS */
+
+
+.how-it-works {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.how-title {
+    align-items: center;
+    box-sizing: border-box;
+    color: #202020;
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 4em;
+    height: 6vh;
+    justify-content: center;
+    padding: 2vh 0 2vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.how-copy {
+    overflow: hidden;
+    padding: 5vh 0;
+}
+.steps {
+    box-sizing: border-box;
+    float: left;
+    padding 0 3%;
+    width: 33%;
+}
+
+.step-description {
+    padding: 1vh 3vw;
+}
+
+.step-description span {
+    font-size: 1.6em;
+    line-height: 1.2;
+}
+
+.step-header {
+    padding: 3vh 0;
+    text-align: center;
+}
+.step-icon {
+    display: block;
+    justify-content: center;padding: 2vh 0;
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    
+}
+
+.step-icon i {
+    color: #00a82d;
+    font-size: 7em;
+}
+
+.step-number {
+    display: block;
+    margin: 2em auto 1em;
+    text-align: center;
+}
+
+
+.step-number span {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 3em;
+    font-weight: 600;
+    text-decoration: bold;
+}
+
+
+.step-icon,
+.step-number,
+.step-description {
+    box-sizing: border-box;
+}
+
