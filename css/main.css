@@ -16,23 +16,23 @@ Grey Background Color: #F2F2F2
 }
 
 .body  {
-    
-    
+    width: 100%;
 }
 
 .content-container {
-    color: inherit;
+    box-sizing: border-box;
     display: flex;
-    padding: 10vh 4vw 10vh;
+    flex: 1 1 auto;
+    padding: 0 4vw;
+    width: 100%;
 }
 
-/* commenting out
 
 .home {
-    flex: 1 1 auto;
+    flex: 1 1 100%;
+    flex-direction: column;
 }
 
-*/
 
 a {
     font-family: 'Roboto';
@@ -86,14 +86,23 @@ span {
     z-index:100;
 }
 
+
+
 .header-logo {
+    max-width: 100%;
     height: 10vh;
 }
+
+
 .header-list {
     display: flex;
     margin: auto;
     text-align: center;
-    width: 66%;
+    width: 65%;
+}
+
+.header-list li {
+    width: 20%;
 }
 .header-list > li {
     border: .5px solid #fff;
@@ -140,6 +149,7 @@ span {
 
 .full-hero {
     box-sizing: border-box;
+    flex: 1 1 auto;
     height: 90vh;
     margin:auto;
     position: relative;
@@ -194,6 +204,7 @@ span {
 
 .full-hero p {
     bottom: 0vh;
+    box-sizing: border-box;
     font-size: 6em;
     left: 50%;
     margin: auto;
@@ -257,6 +268,7 @@ span {
 
 .what-we-do {
     align-items: center;
+    box-sizing: border-box;
     display: flex;
     padding: 7vh;
 }
@@ -382,8 +394,9 @@ span {
 }
 
 .pricing {
-    border: 1px solid black;
     background-color: #fff;
+    border: 1px solid black;
+    box-sizing: border-box;
     height: 90vh;
     margin: 3em auto;
     position: relative;
@@ -430,6 +443,7 @@ span {
 
 .how-it-works {
     align-items: center;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -514,15 +528,26 @@ span {
 /* FOOTER STYLES */
 
 .footer {
-    background-color: #202020;
+    
     color: #fff;
+    display: flex;
+    flex: 1 1 auto;
+    margin: auto;
     text-align: center;
+    width: 100%;
 }
 
 .footer-info {
+    align-items: center;
+    background-color: #202020;
     box-sizing: border-box;
-    margin: auto;
-    padding: 1.6em 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: .5em 0 .75em;
+    text-align: center;
     width: 100%;
 }
 
@@ -533,8 +558,9 @@ span {
 .footer-info h3,
 .footer-info h4 {
     color: #00a82d;
-    margin: 2vh;
+    padding: 1em;
 }
+
 
 /* CONSULTATION BUTTONS */
 
@@ -570,6 +596,7 @@ span {
     color: #fff;
     font-size: 2em;
     padding: .5em;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -577,4 +604,116 @@ span {
     background-color: #fff ;
     color: #00a82d;
 }
+
+
+
+/* MEDIA QUERIES */
+
+/* Large devices (big tablets, 1200px & down) */
+@media only screen and (max-width: 1200px) {
+    
+    .option-box {
+        padding: 0 2%;
+    }
+    
+    .pricing {
+        height: 80vh;
+    }
+    
+    .pricing-title {
+        padding: 6vh 0 2vh;
+    }
+    
+}
+
+/* Medium devices (tablets, tabletsnd down) */
+@media only screen and (max-width: 992px) {
+    
+    .body {
+        width: 100%;
+    }
+    
+    .content-container {
+        display: flex;
+        flex: 1 1 auto;
+        padding: 0 0;
+        width: 100%;
+    }
+    
+    .header, 
+    .footer {
+        width: 100%;
+    }
+    .header-logo {
+        max-width: 100%;
+    }
+    
+    .header-list {
+        width: 100%;
+    }
+    .header-list a {
+        font-size: 1em;
+    }
+    
+    .hero-content h1 {
+        font-size: 4em;
+    }
+    
+    .included-list {
+        margin: 2em 0;
+    }
+    
+    .included-wrapper {
+        padding: 0 0 0 0;
+    }
+    
+    .option-box {
+        margin: 0 0 0 0;
+        padding: 2em 1.5%;
+    }
+    
+    .pricing {
+        height: 90vh;
+    }
+    
+    .pricing-title {
+        padding: 4vh 0 2vh;
+    }
+    
+}
+
+
+
+/* Big phones (portrait tablets and large phones) */
+@media only screen and (max-width: 768px) {
+    
+    .big-hook,
+    .little-hook {
+        padding: 4vh 0 2vh;
+    }
+    .header-list a {
+        font-size: .7em ;
+    }
+    
+    .hero-content {
+        width: 80%;
+    }
+    .hero-content h1 {
+        font-size: 3em;
+    }
+    .hero-content h2{
+        font-size: 2em;
+    }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+
+
+
+
+
 
