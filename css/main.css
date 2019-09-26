@@ -427,7 +427,6 @@ span {
     display: flex;
     flex: 1 1 auto;
     font-size: 4em;
-    height: 6vh;
     justify-content: center;
     padding: 2vh 0 2vh;
     position: relative;
@@ -675,7 +674,7 @@ span {
 }
 
 .test-description {
-    height: 11em;
+    height: 15em;
     padding: .5em 0 0;
     
 }
@@ -691,6 +690,28 @@ span {
 .test-image {
     padding: 1em .5em;
 }
+
+/* CERTIFICATIONS */
+
+.certifications {
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    margin: 3em 0;
+    text-align: center;
+    width: 100%;
+}
+
+.certifications a {
+    padding: 1em 0;
+    width: 25%;
+}
+.certifications img {
+    max-width: 100%;
+}
+
 
 
 
@@ -863,6 +884,22 @@ span {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     
+    .certifications {
+        display: block;
+        position: relative;
+    }
+    
+    .certifications a {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .certifications img {
+        margin: 0 auto;
+        max-width: 51%;
+        padding: .1em .2em;
+    }
     .choices-wrapper {
         align-items: center;
         justify-content: center;
