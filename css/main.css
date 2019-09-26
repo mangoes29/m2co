@@ -334,7 +334,7 @@ span {
     box-sizing: border-box;
     font-weight: 100;
     float: left;
-    margin: 4em 0;
+    margin: 2em 0;
     padding-left: 2em;
     width: 33%;
 }
@@ -360,7 +360,7 @@ span {
 .option-box {
     box-sizing: border-box;
     float: left;
-    margin: 4em 0 4em;
+    margin: 2.5em 0 1em;
     padding: 0 3%;
     width: 33%;
 }
@@ -405,7 +405,6 @@ span {
     box-sizing: border-box;
     height: 90vh;
     margin: 3em auto;
-    padding: 1.5em 0;
     position: relative;
     width: 100%;
 }
