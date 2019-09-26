@@ -909,6 +909,10 @@ span {
     .col-three {
         display: block;
     }
+    
+    .full-hero {
+        height: 82vh;
+    }
     .full-hero p {
         font-size: 2em;
     }
@@ -967,6 +971,7 @@ span {
         padding: 1vh 0;
     }
     .pricing {
+        border: hidden;
         height: auto;
     }
     .pricing-title {
