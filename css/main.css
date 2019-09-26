@@ -277,10 +277,11 @@ span {
     font-size: 1.6em;
     margin: 2vh 0;
 }
-
+/*
 .who-what {
     height: 45vh;
 }
+*/
 
 .who-content {
     box-sizing: border-box;
@@ -404,7 +405,7 @@ span {
     border: 1px solid black;
     box-sizing: border-box;
     height: 90vh;
-    margin: 3em auto;
+    padding: 2em auto;
     position: relative;
     width: 100%;
 }
@@ -613,6 +614,85 @@ span {
     color: #00a82d;
 }
 
+/* TESTIMONIALS */
+
+.customer-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.testimonial {
+    align-items: center;
+    background-color: #F2F2F2;
+    border: 1px solid transparent;
+    border-radius: 5%;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    justify-content: middle;
+    margin: 0% auto;
+    padding: 3%;
+    position: relative;
+    text-align: center;
+    width: 28%;
+}
+
+.testimonial ~ .testimonial {
+    margin-left: 3%;
+}
+
+.testimonial img {
+    border: 1px solid transparent;
+    border-radius: 4em;
+    max-height: 8em;
+}
+
+.testimonial p {
+    text-align: left;
+}
+
+.testimonial-title {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 1em 0;
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+.test-author {
+    margin: 1.2em 0;
+    right: 0;
+    text-align: center;
+    width: 97%;
+}
+
+.test-author span {
+    box-sizing: border-box;
+    display: block;
+    color: #202020;
+    padding: .25em 0 0 0;
+}
+
+.test-description {
+    height: 11em;
+    padding: .5em 0 0;
+    
+}
+
+.test-icon i {
+    color: #00a82d;
+    font-size: 2em;
+}
+.test-icon {
+    padding: .25em 0;
+}
+
+.test-image {
+    padding: 1em .5em;
+}
+
 
 
 /* MEDIA QUERIES */
@@ -780,6 +860,7 @@ span {
     
     .hero-content h2 {
         font-size: 2em;
+        padding: .5em 0;
     }
     .included-details {
         display: none;
@@ -852,12 +933,16 @@ span {
     }
     
     .what-do-copy p, .who-copy p {
-        font-size: .9em;
-        line-height: 1.5;
+        font-size: 1.2em;
+        line-height: 1.4;
     }
     
     .what-icon i {
         font-size: 3em;
+    }
+    
+    .who-and-what-box {
+        display: initial;
     }
     
 }
