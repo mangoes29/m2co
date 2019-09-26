@@ -474,7 +474,6 @@ span {
 }
 
 .how-copy {
-    overflow: hidden;
     padding: 5vh 0;
 }
 .steps {
@@ -716,6 +715,10 @@ span {
         padding: 6vh 0 2vh;
     }
     
+    .test-description {
+        height: 20em;
+    }
+    
     .who-copy {
         padding-right: 2em;
     }
@@ -786,6 +789,9 @@ span {
     .little-hook {
         padding: 6vh 0 6vh;
     }
+    .customer-wrapper {
+        display: block;
+    }
     .header-list a {
         font-size: .7em ;
     }
@@ -798,6 +804,20 @@ span {
     }
     .hero-content h2{
         font-size: 3em;
+    }
+    .sneaky-p {
+        padding-top: 1em;
+    }
+    .testimonial {
+        margin: 2em auto;
+        width: 90%;
+    }
+    .testimonial ~ .testimonial {
+        margin: 2em auto;
+        width: 90%;
+    }
+    .test-description {
+        height: 9em;
     }
     
     .what-and-who-box {
@@ -843,7 +863,6 @@ span {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     
-    
     .choices-wrapper {
         align-items: center;
         justify-content: center;
@@ -853,7 +872,9 @@ span {
     .col-three {
         display: block;
     }
-    
+    .full-hero p {
+        font-size: 2em;
+    }
     .hero-content h1 {
         font-size: 3em;
     }
@@ -862,7 +883,10 @@ span {
         font-size: 2em;
         padding: .5em 0;
     }
-    .included-details {
+    .how-title {
+        font-size: 2.3em;
+    }
+     .included-details {
         display: none;
     }
     .included-details-megalist {
@@ -879,13 +903,6 @@ span {
     }
     .included-list {
         width: 100%;
-    }
-    
-    .full-hero p {
-        font-size: 4em;
-    }
-    .how-title {
-        font-size: 2.3em;
     }
     .option-box {
         box-sizing: border-box;
@@ -931,7 +948,13 @@ span {
         margin: 0 0 0 0;
         padding: 2vh 0;
     }
-    
+    .test-description {
+        height: 15em;
+        padding-top: .5em;
+    }
+    .caleb .test-description {
+        height: 10em;
+    }
     .what-do-copy p, .who-copy p {
         font-size: 1.2em;
         line-height: 1.4;
