@@ -910,9 +910,6 @@ span {
         display: block;
     }
     
-    .full-hero {
-        height: 82vh;
-    }
     .full-hero p {
         font-size: 2em;
     }
