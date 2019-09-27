@@ -404,7 +404,7 @@ span {
     background-color: #fff;
     border: 1px solid black;
     box-sizing: border-box;
-    height: 90vh;
+    min-height: 90vh;
     padding: 2em auto;
     position: relative;
     width: 100%;
