@@ -713,6 +713,28 @@ span {
 }
 
 
+/* BLOG POST PAGES */
+
+.post {
+    margin: 0 auto;
+    max-width: 728px;
+    padding: 3vh 0;
+}
+
+.post-byline {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.post-grav {
+    margin: 0 auto;
+    max-height: 20vh;
+    padding: 3vh 0;
+}
+
+.preview {
+    font-size: 2em;
+}
 
 
 /* MEDIA QUERIES */
