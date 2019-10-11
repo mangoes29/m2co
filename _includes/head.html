@@ -1,28 +1,30 @@
 <head>
-        {% if page.title %}
-        <title>{{ page.title }} | Test Page</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149849153-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149849153-1');
+    </script>
+
+    {% if page.title %}
+    <title>{{ page.title }} | Test Page</title>
     {% else %}
-        <title>Done for you Job Cost Bookkeeping - M2CO</title>
-    {% endif %}
-    {% if page.description %}
-        <meta name="description" content=" {{ page.description }}">
-    {% else %}
-        <meta name="description" contents="Job cost accounting done for you - be confident in your numbers while saving time and money.">
-    {% endif %}
-    {% if page.og-title %}
-        <meta property="og:title" content=" {{ page.og-title }}"/>
-    {% else %}
-        <meta property="og:title" content="Done for you Job Cost Accounting - M2CO"/>
-    {% endif %}
-     {% if page.og-description %}
-        <meta property="description" content=" {{ page.og-description }}">
-    {% else %}
-        <meta property="description" contents="Job cost accounting done for you - be confident in your numbers while saving time and money.">
-    {% endif %}
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="fonts/fontawesome-free-5.10.2-web/css/all.css">
-        <link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="/css/main.css">
+    <title>Done for you Job Cost Bookkeeping - M2CO</title>
+    {% endif %} {% if page.description %}
+    <meta name="description" content=" {{ page.description }}"> {% else %}
+    <meta name="description" contents="Job cost accounting done for you - be confident in your numbers while saving time and money."> {% endif %} {% if page.og-title %}
+    <meta property="og:title" content=" {{ page.og-title }}" /> {% else %}
+    <meta property="og:title" content="Done for you Job Cost Accounting - M2CO" /> {% endif %} {% if page.og-description %}
+    <meta property="description" content=" {{ page.og-description }}"> {% else %}
+    <meta property="description" contents="Job cost accounting done for you - be confident in your numbers while saving time and money."> {% endif %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.10.2-web/css/all.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
